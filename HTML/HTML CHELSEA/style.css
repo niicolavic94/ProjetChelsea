@@ -1,0 +1,320 @@
+
+/* CORPS DU SITE */
+
+
+body { background: linear-gradient(#FFFFFF, #C2C2C2);
+font-family: "michroma"; }
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-size: medium;
+}
+/* dispo du header */
+
+header .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+/* dispo du logo */
+
+header .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color:#004AAD;
+    font-size: 70px;
+    
+    
+
+}
+/* dispo du nom du site */
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+}
+/* dispo des icone de connexion & inscription */
+header .right img {
+    height: 80px;
+    width: 80px; 
+    margin: 10px;
+}
+/* taille des icones */
+
+header .left img {
+height: 200px;
+width: 200px;
+margin: 10px;
+}
+/* taille du log */
+
+
+.nav {
+    overflow: hidden;
+
+}
+/* dispo de la navbar */
+.nav .menu {
+    list-style-type: none;
+    
+    text-align: center;
+    
+}
+/* dispo du menu */
+.nav .menu li {
+    display: inline;
+}
+/* dispo du menu aligné */
+
+.nav .menu button {
+    box-shadow: 2px 2px 10px 5px white;
+    background-color:#004AAD;
+    border-radius: 2em;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 8px 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    transition: color 0.1s ease;
+}
+/* bouton menu */
+.nav .menu button:hover {
+    color:black;
+    background-color: gold;
+    border-radius: 2em;
+}
+/* bouton menu background couleur du hover */
+
+.nav .menu a {
+    color: white;
+    text-decoration: none;
+}
+/* liens couleur */
+
+.nav .menu a:hover {
+    color: black;
+    text-decoration: none;
+}
+/* lien couleur hover */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    border: 2px solid white;
+    border-radius: 2em;
+    border-bottom: 2em;
+    background-color:gold;
+    box-shadow: 2px 2px 10px 5px white;
+   
+
+
+}
+/* orga du footer voir qque modif */
+
+footer .left {
+    display: flex;
+    flex-direction: baseline;
+    font-size: large;
+
+
+}
+/* dispo de FAQ & Mentions légales */
+footer .right {
+    display: flex;
+    align-items: center;
+
+}
+/* dispo des réseaux */
+
+footer .right ul {
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+
+}
+/* dispo des liens */
+footer .right ul li {
+    margin-left: 10px;
+}
+/* marge des liens  */
+footer .right ul li img {
+    height: 50px;
+}
+/* taille des logos réseaux */
+iframe {
+    margin: 1em auto;
+    display: block;
+    border-radius: 2em;
+    box-shadow: 2px 2px 10px 5px white;
+}
+
+/* FIN CORPS DU SITE */
+
+/* PAGE ACCUEIL */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* dispo du main */
+
+p {
+    text-align: center;
+    color: white;
+}
+/* dispo des <p> */
+.match {
+    align-items: center;
+}
+/* alignement des élements */
+
+
+h2 {
+    text-align: center;
+ 
+}
+/* alignement des titres H2 */
+
+article {
+    border: 2px solid grey;
+    border-radius: 2em;
+    border-bottom: 2em;
+    box-shadow: 2px 2px 10px 5px white;
+    padding: 2em;
+    width: 15em;
+    margin-bottom: 3em;
+    background-color: #004AAD;
+    
+
+}
+/* dispo de l'article */
+
+
+main h1 {
+    margin-top: 0; 
+    background-color: #004AAD;
+    border: #004AAD;
+    border-radius: 2em;
+    
+
+    color: white;
+    text-align: CENTER;
+
+}
+
+
+/* FIN ACCUEIL*/
+
+/* PAGE ACTU */
+
+.accordion-header {
+    background-color: #004AAD;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 10px;
+    transition: 0.2s;
+    border-radius: 3em;
+    margin: 4px;
+  }
+  
+  .accordion-header:hover {
+    background-color: black;
+    color: gold;
+  }
+  
+  .accordion-header i {
+    margin-right: 10px;
+  }
+  
+  .accordion-content {
+    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  @media (max-width: 767px) {
+    .accordion-header {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .accordion-header {
+      font-size: 22px;
+    }
+  }
+  
+  /* FIN ACTU */
+
+
+  /* FORUM */
+
+  /* FIN FORUM */
+
+  /* CLUB */
+  
+  .tableauclub ul {
+    text-align: center;
+    list-style-type: none;
+    padding:auto;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    column-width: 10px 10px;
+    
+}
+
+/* Style for the links within the list items */
+.tableauclub ul li a {
+    text-decoration: none; /* Remove underline */
+    background-color: gold; /* Set background color */
+    color: black; /* Set text color for contrast */
+    padding: 10px 15px; /* Add some padding */
+    margin-bottom: 15px; /* Add some margin between list items */
+    border-radius: 2em; /* Optional: Add rounded corners */
+    display: block; /* Make the link block level to fill the li */
+    font-size: larger;
+}
+
+/* Add hover effect */
+.tableauclub ul li a:hover {
+    background-color: #004AAD; /* Change background color on hover */
+    color: white; /* Optional: Change text color on hover */
+}
+
+  /* FIN CLUB */
+
+  /* MATCH */
+
+  /* FIN MATCH */
+
+/* RESEAUX SOCIAUX */
+
+
+
+
+/* FIN RESEAUX SOCIAUX */

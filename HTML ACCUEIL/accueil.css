@@ -1,0 +1,30 @@
+
+header {
+    text-align-last: auto;
+}
+
+body { 
+    background-color: lightgrey;
+    text-align: center;
+}
+button {
+   background-color: blue;
+   text-decoration: solid;
+   border-radius: 1cm;
+   border-bottom: 1cm;
+   border-color: white;
+   justify-content: center;
+}
+footer {
+    text-align: left;
+    
+}
+
+img {
+    width : 2%; 
+    min-width : 1cm;
+    }
+
+
+
+
